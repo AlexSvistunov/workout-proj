@@ -1,0 +1,13 @@
+@import '../css/normalize.css';
+@import '../css/fonts.css';
+@import '../css/variables.css';
+@import '../css/overall.css';
+
+/* --------------------- */
+
+
+
+/* COMPONENTS */
+
+@import '../components/header.css';
+/* ------------------------ */
