@@ -36,6 +36,14 @@
     flex-direction: column;
     border: 1px solid rgba(43, 53, 65,0.7);
     margin-bottom: 20px;
+    transition: all .35s;
+}
+
+.card:hover {
+    background: var(--new-gradient, linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%));
+    box-shadow: 0px 13px 30px 0px rgba(186, 180, 69, 0.20);
+    border: 1px solid transparent;
+    transition: all .35s;
 }
 
 .card__date {
@@ -140,6 +148,10 @@
     min-height: 65px;
 }
 
+.form__field:focus {
+    border: 1px solid #FBF138;
+}
+
 
 .form__button {
     padding: 21px 35px;
@@ -147,4 +159,19 @@
     min-height: 65px;
     font-size: 16px;
     font-weight: 700;
+}
+
+.form__label {
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+.form__label span {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.form__label:hover {
+    opacity: 1;
+    color: rgba(43, 53, 65, 0.50);
 }

@@ -1,5 +1,6 @@
 .event {
     padding: var(--section-offset) 0;
+    padding-top: 270px;
 }
 
 .event__title {
@@ -21,6 +22,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+}
+
+.event__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #FBF138 0%, rgba(251, 242, 64, 0.94) 6.25%, rgba(253, 249, 182, 0.00) 100%);
+    opacity: 0;
+    transition: all .35s;
 }
 
 .event__card--1 {
@@ -55,6 +72,27 @@
     background-color: var(--accent-color);
 }
 
+
+.event__button {
+    opacity: 0;
+    padding: 20px 30px;
+    min-width: 221px;
+    min-height: 64px;
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+    transition: all .35s;
+    
+}
+
+.event__card:hover .event__button {
+    opacity: 1;
+    transition: all .35s;
+}
+
+.event__card:hover::before {
+    opacity: 0.2;
+    transition: all .35s;
+}
 
 
 

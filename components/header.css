@@ -31,15 +31,34 @@ h1,h2,h3,h4,h5,h6 {
     gap: 92px;
 }
 
-.menu__list {
+.header__menu-list {
     display: flex;
     gap: 54px;
 }
 
-.socials__list {
+.header__menu-link {
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    transition: all .35s;
+}
+
+.header__menu-link:hover {
+    border-bottom: 1px solid currentColor;
+    transition: all .35s;
+}
+
+/* .menu__list {
+    display: flex;
+    gap: 54px;
+} */
+
+.header__socials-list {
     display: flex;
     gap: 30px;
 }
+
+
+
 
 .socials__link {
     display: inline-block;
@@ -48,7 +67,13 @@ h1,h2,h3,h4,h5,h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: transform .35s;
 
+}
+
+.socials__link:hover {
+    transform: scale(1.26);
+    transition: transform .35s;
 }
 
 .socials__link--inst {
