@@ -1,0 +1,49 @@
+.about {
+    padding: var(--section-offset) 0;
+}
+
+.about__container {
+    display: flex;
+    margin-bottom: 80px;
+
+}
+
+.about__text {
+    max-width: 483px;
+    margin-right: 77px;
+}
+
+.about__title {
+    margin-bottom: 19px;
+}
+
+.about__descr {
+    margin-bottom: 34px;
+}
+
+.about__btn {
+    padding: 20px 51px;
+    min-width: 225px;
+    min-height: 65px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.about__elements {
+    display: flex;
+    gap: 67px;
+}
+
+.about__element {
+    max-width: 284px;
+}
+
+.about__element-title {
+    margin-bottom: 20px;
+    font-size: 18px
+
+}
+
+.about__element-descr {
+    opacity: 0.6;
+}

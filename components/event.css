@@ -1,0 +1,60 @@
+.event {
+    padding: var(--section-offset) 0;
+}
+
+.event__title {
+    margin-bottom: 40px;
+}
+
+.event__cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+
+}
+
+.event__card {
+    grid-column: 4 span;
+    min-height: 598px;
+    padding: 30px 77px 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.event__card--1 {
+    background-image: url('../images/event-1.jpg');
+}   
+
+.event__card--2 {
+    background-image: url('../images/event-2.jpg');
+}
+
+.event__card--3 {
+    background-image: url('../images/event-3.jpg');
+}
+
+.event__date {
+    display: block;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.event__title {
+    font-size: 28px;
+}
+
+.event__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    min-height: 27px;
+    min-width: 82px;
+    background-color: var(--accent-color);
+}
+
+
+
+
